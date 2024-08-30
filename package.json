@@ -1,0 +1,24 @@
+{
+  "name": "resort_booking",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "mongoose": "^8.6.0",
+    "next": "14.2.7",
+    "next-auth": "^5.0.0-beta.20",
+    "react": "^18.3.1",
+    "react-date-range": "^2.0.1",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7"
+  }
+}
