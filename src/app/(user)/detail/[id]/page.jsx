@@ -25,7 +25,7 @@ const DynamicProduct = () => {
 
     const dynamicProductHandler = async()=>{
         
-        const response = await fetch(`http://localhost:3000/api/admin/product/${id}`)
+        const response = await fetch(`https://next-resort-project.vercel.app/api/admin/product/${id}`)
         const newData = await response.json()
 
         console.log("dynaic data:", newData)
