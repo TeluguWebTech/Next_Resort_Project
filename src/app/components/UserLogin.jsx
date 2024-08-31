@@ -25,10 +25,10 @@ const UserLogin = () => {
           if(response.success){
                 router.push("/")
           }else{
-            setError(response.message || "login failed")
+            setError("invalid credentials || Please Register")
           }
         } catch (error) {
-            setError(error.message)
+            setError("invalid credentials || Please Register")
         }
     }
 

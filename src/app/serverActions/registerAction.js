@@ -18,7 +18,11 @@ export async function registerAction(registerDetails){
             })
             return {success:true}
         } catch (error) {
-            console.log(error)
+            if (error.code === 11000 && error.keyPattern.email) {
+                return { success: false, status: 400, message: "Email already taken" };
+            }
+            console.log(error);
+            return { success: false, status: 500, message: "An error occurred" };
         }
 
 }
