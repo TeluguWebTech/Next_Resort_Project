@@ -28,7 +28,7 @@ const UserLogin = () => {
             setError(response.message || "login failed, Invalid Credentials")
           }
         } catch (error) {
-            setError(error.message)
+            setError("Invalid Credentials")
         }
     }
 
