@@ -16,6 +16,10 @@ export async function loginAction(loginDetails){
             password: loginDetails.password,
             redirect:false
         })
+        if(!response || response.error){
+            console.log("login failed", response?.error)
+            throw new Error("login falied, Please Register")
+        }
         return {success:true}
     } catch (error) {
         throw new Error("Invalid credentials")
