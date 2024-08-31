@@ -43,7 +43,7 @@ const UserLogin = () => {
             <h3>Email</h3>
             <input type="text" name='email' onChange={(e)=>setEmail(e.target.value)} />
             <h3>Password</h3>
-            <input type="text" name='password' onChange={(e)=>setPassword(e.target.value)} />
+            <input type="password" name='password' onChange={(e)=>setPassword(e.target.value)} />
             <br /><br />
             <button type='submit'>Login</button>
         <Link href="/register" className='authLink'>

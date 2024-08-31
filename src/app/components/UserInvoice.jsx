@@ -59,7 +59,7 @@ const UserInvoice = ({ userId }) => {
     }
   
     try {
-      const response = await fetch(`http://localhost:3000/api/users/${bookingId}`, {
+      const response = await fetch(`https://next-resort-project.vercel.app/api/users/${bookingId}`, {
         method: 'DELETE',
       });
   
