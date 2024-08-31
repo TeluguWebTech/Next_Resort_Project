@@ -24,9 +24,12 @@ const RegisterForm = () => {
               if(response.success){
                 alert("Registration success")
                   router.push("/login")
-              }
+              }else {
+                setError(response.message);  
+            }
         } catch (error) {
             console.log(error)
+            setError("An unexpected error occurred"); 
         }
 
     }
