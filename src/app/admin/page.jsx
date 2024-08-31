@@ -21,13 +21,16 @@ const AdminPage = async() => {
 
   return (
       <div>
-        {session ? (
+        {session.role === 'admin' ? (
           <>
           <AdminNavbar />
           <AddProduct />
 
           </>
-        ) : "Not authorized"
+        ) : <div align="center">
+          <h1>Not Authorized</h1>
+          <Link href="/login"> Login</Link>
+        </div>
       }
       </div>
    

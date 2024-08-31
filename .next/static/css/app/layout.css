@@ -75,25 +75,56 @@
     padding:0;
     box-sizing: border-box;
   }
-  
-  .formContainer{
+  .loginBody {
     height: 100vh;
+    background: linear-gradient(
+        rgba(243, 239, 239, 0.5), 
+        rgba(250, 248, 248, 0.322)
+    ), 
+    url('/background.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply; 
+}
+
+/* Form container styling */
+.formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-  }
+    height: 100vh;
+    z-index: 1; 
+    position: relative;
+    background: rgba(133, 121, 121, 0.363); 
+    padding: 20px;
+    border-radius: 8px;
+    color: orangered;
+}
+
   .formSection{
     border: 1px solid gray;
+    border: 2px solid rgb(165, 158, 158);
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:gray;
+    background:rgb(3, 107, 90);
     padding: 20px 0;
-    padding-top: 50px;
+    padding-top: 60px;
+    color: white;
+    border-radius: 10px;
+  }
+  .formSection h1{
+    margin-top: -30px;
+    border-bottom: 1px solid white;
+  }
+  .bannerImage{
+    width:100%;
+  }
+  .authLink{
+    color: yellow;
+    margin-top: 10px;
   }
   .formSection h3{
     width: 80%;
@@ -122,6 +153,11 @@
     align-items: center;
     padding: 0 20px;
     cursor: pointer;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:100;
   }
   .user{
     display: flex;
@@ -342,10 +378,22 @@
     color: #dc3545;
     margin-top: 20px;
   }
+  .deleteBtn{
+    padding:5px 15px;
+    margin-top:5px;
+    background:red;
+    color:white;
+  }
+
 
 /* media queries */
 
 @media (max-width:580px){
+  .formSection{
+    border: 2px solid white;
+    width: 80%;
+  }
+
   .navSection{
     width: 100vw;
     font-size: x-small;
@@ -424,5 +472,9 @@
   .dateRange{
  
     left:15px
+  }
+  .invoice-container{
+    width:300px;
+    margin:0 20px;
   }
 }

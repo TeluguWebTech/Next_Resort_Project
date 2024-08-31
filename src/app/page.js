@@ -35,7 +35,7 @@ const HomePage = async() => {
       {session.role === 'user' &&  (
         <>
         <UserNavigation userName = {userName}/>
-        <h1>Welcome to Holiday Resort</h1>
+        <img src='banner.jpg' alt='banner' className='bannerImage'/>
         <ProductCollection />
         </>
       ) }

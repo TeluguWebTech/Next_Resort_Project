@@ -34,9 +34,11 @@ const UserLogin = () => {
 
 
   return (
-    <div className='formContainer'>
-      <h1>Login Form</h1>
+<div className="loginBody">
+<div className='formContainer'>
+
        <form onSubmit={loginHandler} className='formSection' >
+      <h1>Login</h1>
            {error && <p style={{color:'red'}}>{error}</p> }
             <h3>Email</h3>
             <input type="text" name='email' onChange={(e)=>setEmail(e.target.value)} />
@@ -44,11 +46,12 @@ const UserLogin = () => {
             <input type="text" name='password' onChange={(e)=>setPassword(e.target.value)} />
             <br /><br />
             <button type='submit'>Login</button>
-        </form>
-        <Link href="/register">
+        <Link href="/register" className='authLink'>
          If not registered? Regiter
         </Link>
+        </form>
     </div>
+</div>
   )
 }
 

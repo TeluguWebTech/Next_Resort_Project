@@ -32,9 +32,10 @@ const RegisterForm = () => {
     }
 
   return (
-    <div className='formContainer'>
-      <h1>Register Form</h1>
+   <div className="loginBody">
+     <div className='formContainer'>
         <form onSubmit={registerHandler} className='formSection' >
+      <h1 style={{color:"white", borderBottom:'1px solid white'}}>Register </h1>
             <h3>Username</h3>
             <input type="text" name='username' onChange={(e)=>setUsername(e.target.value)} />
             <h3>Email</h3>
@@ -43,12 +44,13 @@ const RegisterForm = () => {
             <input type="text" name='password' onChange={(e)=>setPassword(e.target.value)} />
             <br /><br />
             <button type='submit'>Register</button>
-        </form>
-        <Link href="/login">
+        <Link href="/login" className='authLink'>
           Already Registered? Login
         </Link>
+        </form>
         
     </div>
+   </div>
   )
 }
 

@@ -18,15 +18,10 @@
       "static/css/app/(user)/detail/[id]/page.css",
       "static/chunks/app/(user)/detail/[id]/page.js"
     ],
-    "/(user)/login/page": [
+    "/(user)/invoice/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(user)/login/page.js"
-    ],
-    "/(user)/register/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(user)/register/page.js"
+      "static/chunks/app/(user)/invoice/page.js"
     ]
   }
 }
