@@ -9,6 +9,8 @@ import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import CalenderComponent from '@/app/components/CalenderComponent'
 import { bookingAction } from '../serverActions/bookingAction'
+import { Circles } from 'react-loader-spinner'
+
 
 
 const DynamicProduct = () => {
@@ -97,7 +99,15 @@ const DynamicProduct = () => {
             </div>
 
            </div>)
-        :<h1 style={{position:'absolute', top:'50%', left:'50%'}}>Loading...</h1>}
+        :<h1 style={{position:'absolute', top:'50%', left:'50%'}}>    <Circles
+        height="80"
+        width="80"
+        color="white"
+        ariaLabel="circles-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+        /></h1>}
 </div>
   )
   
