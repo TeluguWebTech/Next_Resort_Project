@@ -5,17 +5,28 @@
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { Circles } from 'react-loader-spinner'
+
 
 const ProductCollection = () => {
     const [collections, setCollections] = useState("")
+    const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
 
     const collectionHandler = async()=>{
-        const response = await fetch(`https://next-resort-project.vercel.app/api/admin/add-product`)
-        const newData = await response.json()
+      setLoading(true)
+     try {
+      const response = await fetch(`https://next-resort-project.vercel.app/api/admin/add-product`)
+      const newData = await response.json()
 
-        console.log("productData:", newData)
+      console.log("productData:", newData)
 
-        setCollections(newData.data)
+      setCollections(newData.data)
+     } catch (error) {
+      setError(response.message)
+     }finally{
+      setLoading(false)
+    }
 
     }
 
@@ -58,7 +69,17 @@ const ProductCollection = () => {
             </div>
           )
         }) ): (
-            <h1 style={{textAlign:'center', color:'green', marginTop:'200px'}}>Loading...</h1>
+           <>
+               <Circles
+  height="80"
+  width="80"
+  color="white"
+  ariaLabel="circles-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+  />
+           </>
         )
     }
     
