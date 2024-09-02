@@ -40,7 +40,7 @@ const RegisterForm = () => {
    <div className="loginBody">
      <div className='formContainer'>
         <form onSubmit={registerHandler} className='formSection' >
-      <h1 style={{color:"white", borderBottom:'1px solid white'}}>Register </h1>
+      <h1 style={{color:"white", borderBottom:'1px solid white'}} className="rTitle">Register </h1>
       {error && <p style={{color:'red'}}>{error}</p> }
             <h3>Username</h3>
             <input type="text" name='username' onChange={(e)=>setUsername(e.target.value)} />
