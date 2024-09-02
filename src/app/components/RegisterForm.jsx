@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { registerAction } from '../serverActions/registerAction';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const RegisterForm = () => {
     const [username, setUsername] = useState("");
@@ -37,7 +38,15 @@ const RegisterForm = () => {
     }
 
   return (
-   <div className="loginBody">
+   <div >
+    <Image
+        src="/background.jpg"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={75} 
+        priority 
+    />
      <div className='formContainer'>
         <form onSubmit={registerHandler} className='formSection' >
       <h1 style={{ borderBottom:'1px solid white'}} className="rTitle">Register </h1>

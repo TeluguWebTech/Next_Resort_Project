@@ -6,6 +6,8 @@ import React, { useState } from 'react'
 import { loginAction } from '../serverActions/loginAction';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import bgImage from '../../../public/background.jpg'
+import Image from 'next/image';
 
 const UserLogin = () => {
     const [email, setEmail] = useState("");
@@ -34,7 +36,15 @@ const UserLogin = () => {
 
 
   return (
-<div className="loginBody">
+<div >
+<Image
+        src="/background.jpg"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={75} 
+        priority 
+    />
 <div className='formContainer'>
 
        <form onSubmit={loginHandler} className='formSection' >
