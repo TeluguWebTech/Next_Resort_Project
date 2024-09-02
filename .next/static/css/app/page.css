@@ -1,0 +1,78 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/components.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+.components_formContainer__bFBnf{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.components_formSection__ngI0H{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 30px 20px;
+    background:rgb(114, 109, 109)
+}
+.components_formSection__ngI0H h3{
+    
+    width:80%;
+    margin-bottom: 5px;
+
+}
+.components_input__L6N5h{
+    font-size: 1.2rem;
+    width:80%;
+    height:2.2rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.components_regBtn__77f_B{
+    padding: 10px 50px;
+    background: rgb(76, 70, 141);
+    color: white;
+}
+
+/* add product form  */
+.components_container__Zpovh{
+    height:100vh;
+}
+.components_container__Zpovh h1{
+        margin: 10px 50px;
+}
+
+.components_container__Zpovh h3{
+    margin-bottom: 5px;
+}
+.components_fields__5iy02{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px
+}
+.components_container__Zpovh input{
+    height: 30px;
+    width: 400px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.components_textField__1PkQw{
+    display: flex;
+    flex-direction: column;
+    padding: 0 180px;
+}
+.components_container__Zpovh button{
+    padding: 10px 50px;
+    background: rgb(32, 32, 95);
+    color: white;
+}
+.components_submit__dQJWw{
+    text-align: center;
+}

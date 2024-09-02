@@ -1,1 +1,14 @@
-{"node":{"186032b28e4561a6e91301b0374298073da0b57b":{"workers":{"app/(user)/detail/[id]/page":"29904"},"layer":{"app/(user)/detail/[id]/page":"action-browser"}},"1c7db21660f164619d4205c7422f8cc965cbc89a":{"workers":{"app/(user)/login/page":"64058"},"layer":{"app/(user)/login/page":"action-browser"}},"035ecf4a4809cc3d44e6a3c50848def892f3ed74":{"workers":{"app/(user)/register/page":"13661"},"layer":{"app/(user)/register/page":"action-browser"}}},"edge":{},"encryptionKey":"Zq+3AdugmlKpsmwGBjIGjOqSwJK9Cr/84wSt0fXBPFg="}
+{
+  "node": {
+    "1c7db21660f164619d4205c7422f8cc965cbc89a": {
+      "workers": {
+        "app/(user)/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cdell%5C%5CDesktop%5C%5CNext_Resort%5C%5Cresort_booking%5C%5Csrc%5C%5Capp%5C%5CserverActions%5C%5CloginAction.js%22%2C%5B%22loginAction%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(user)/login/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "2Ucu0qblGWK15uSXZ44p/NsxY4A4BAp4Ta1Njn80ZLo="
+}
