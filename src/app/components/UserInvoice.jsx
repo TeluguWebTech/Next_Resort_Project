@@ -40,7 +40,7 @@ const UserInvoice = ({ userId }) => {
     return <div><Circles
     height="80"
     width="80"
-    color="white"
+    color="#4fa94d"
     ariaLabel="circles-loading"
     wrapperStyle={{}}
     wrapperClass=""

@@ -102,7 +102,7 @@ const DynamicProduct = () => {
         :<h1 style={{position:'absolute', top:'50%', left:'50%'}}>    <Circles
         height="80"
         width="80"
-        color="white"
+        color="#4fa94d"
         ariaLabel="circles-loading"
         wrapperStyle={{}}
         wrapperClass=""
