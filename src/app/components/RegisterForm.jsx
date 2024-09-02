@@ -6,19 +6,22 @@ import { registerAction } from '../serverActions/registerAction';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { Circles } from 'react-loader-spinner'
 
 const RegisterForm = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+
 
 
     const router = useRouter()
 
     const registerHandler = async(e)=>{
         e.preventDefault()
-
+        setLoading(true)
         const userRegisterDetails = {username,email, password}
         console.log(userRegisterDetails)
 
@@ -33,6 +36,8 @@ const RegisterForm = () => {
         } catch (error) {
             console.log(error)
             setError("An unexpected error occurred"); 
+        }finally{
+          setLoading(false)
         }
 
     }
@@ -48,7 +53,21 @@ const RegisterForm = () => {
         priority 
     />
      <div className='formContainer'>
-        <form onSubmit={registerHandler} className='formSection' >
+      {
+        loading? (
+          <>
+           <Circles
+  height="80"
+  width="80"
+  color="white"
+  ariaLabel="circles-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+  />
+          </>
+        ):(<>
+         <form onSubmit={registerHandler} className='formSection' >
       <h1 style={{ borderBottom:'1px solid white'}} className="rTitle">Register </h1>
       {error && <p style={{color:'red'}}>{error}</p> }
             <h3>Username</h3>
@@ -64,6 +83,9 @@ const RegisterForm = () => {
         </Link>
         </form>
         
+        </>)
+      }
+       
     </div>
    </div>
   )

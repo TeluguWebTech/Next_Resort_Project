@@ -2,5 +2,5 @@
   "/(user)/login/page": "app/(user)/login/page.js",
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/(user)/register/page": "app/(user)/register/page.js"
 }
