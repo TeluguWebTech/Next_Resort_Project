@@ -71,7 +71,7 @@ const UserLogin = () => {
       <h1>Login</h1>
            {error && <p style={{color:'red'}}>{error}</p> }
             <h3>Email</h3>
-            <input type="text" name='email' onChange={(e)=>setEmail(e.target.value)} />
+            <input type="email" name='email' onChange={(e)=>setEmail(e.target.value)} />
             <h3>Password</h3>
             <input type="password" name='password' onChange={(e)=>setPassword(e.target.value)} />
             <br /><br />
